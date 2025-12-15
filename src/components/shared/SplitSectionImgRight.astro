@@ -1,5 +1,5 @@
 ---
-import ButtonProps from "../shared/ButtonProps.astro";
+// import ButtonProps from "../shared/ButtonProps.astro";
 import Image from "astro/components/Image.astro";
 import SelfImg from "../../images/self.jpg";
 // import DynamicAboutCTA from "./shared/DynamicAboutCta";
@@ -10,13 +10,14 @@ export interface Props {
   paragraph2: string;
   paragraph3: string;
   paragraph4: string;
+  rightImg: string;
 }
 
-const { title, paragraph1, paragraph2, paragraph3, paragraph4 } =
+const { title, paragraph1, paragraph2, paragraph3, paragraph4, rightImg } =
   Astro.props as Props;
 ---
 
-<div id="" class="bg- py-5 my-5">
+<div id="AboutSection1" class="bg- py-5 my-5">
   <div id="PROBLEM-SOLVING-wrapper" class="py-5">
     <div id="container" class="bg- 2xl:mx-0 md:mx-[50px] mx-5">
       <div id="about-me-grid" class="grid md:grid-cols-2 grid-cols-1 gap-1">
@@ -29,18 +30,23 @@ const { title, paragraph1, paragraph2, paragraph3, paragraph4 } =
             <!-- <DynamicAboutCTA isLoggedIn={false} username="test" /> -->
           </div>
         </div>
+
+        <!-- TODO: MAKE IMG CONDITIONAL V-->
         <div id="sq2" class="bg- row-span-2">
-          <Image
-            id="self-img"
-            src={SelfImg}
+          <img
+            id=""
+            src={rightImg}
             alt=""
             class="sq-styles bg- lg:p-5 p-2 2xl:w-[450px] my-2 sq-styles"
           />
         </div>
+        <!-- TODO: MAKE IMG CONDITIONAL ^-->
 
         <div id="sq3" class="bg- flex 2xl:justify-end">
           <div class="2xl:w-1/2 w-full md:pl-1 pl-3 md:pr-3 pr-1 pt-5">
-            <h2 class="font-bold text-3xl pb-2">{title}</h2>
+            <h2 id="about-section1-title" class="font-bold text-3xl pb-2">
+              {title}
+            </h2>
             <p>
               {paragraph1}<p>
                 <p>
@@ -54,10 +60,10 @@ const { title, paragraph1, paragraph2, paragraph3, paragraph4 } =
                 </p>
               </p>
 
-              <ButtonProps
+              <!-- <ButtonProps
                 btn1="view AboutSection2"
                 btn1Link="/#view-AboutSection2"
-              />
+              /> -->
             </p>
           </div>
         </div>

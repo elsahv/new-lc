@@ -7,7 +7,7 @@ export interface Props {
 const { BannerTitle, paragraph } = Astro.props as Props;
 ---
 
-<div id="BannerTitle-wrapper" class="mt-[150px] pt-5">
+<div id="BannerTitle-wrapper" class="pt-[150px]">
   <div id="BannerTitle-section" class="bg- flex justify-center">
     <div id="title-banner" class="flex items-center">
       <div id="icon-wrapper" class="text-5xl"></div>
@@ -19,7 +19,7 @@ const { BannerTitle, paragraph } = Astro.props as Props;
     </div>
   </div>
 
-  <div id="Banner-paragraph" class="bg- flex justify-center md:mb-5">
+  <div id="Banner-paragraph" class="bg- flex justify-center">
     <div class="pt-1 pb-5 bg-">
       <p class="text-xl px-5 mx-5 max-w-6xl">
         {paragraph}

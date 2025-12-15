@@ -1,0 +1,32 @@
+---
+import ContactForm from "../ContactForm";
+import CenterPageBanner from "../shared/CenterPageBanner.astro";
+import CTA from "../shared/CTA.astro";
+---
+
+<div class="bg-teal text-parchment pl-[80px]">
+  <div class="pt-[50px] py-[70px]">
+    <CenterPageBanner
+      BannerTitle="Contact"
+      paragraph="I build custom applications for small businesses."
+    />
+    <div class="grid xl:grid-cols-2 pt-[90px] mt-5">
+      <div class="lg:mr-5 mb-5">
+        <img
+          src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg"
+          alt=""
+          class="border-2 border-black rounded-tr-2xl rounded-br-2xl xl:w-full w-3/4"
+        />
+      </div>
+      <ContactForm />
+    </div>
+  </div>
+  <!-- ? Writing CTA?? something along the lines of: "Not ready to commit to a site? Feel free to look at free blog resources!" -->
+  <!-- TRANSITION CSS HERE v-->
+  <div class="md:absolute relative"></div>
+  <div id="skewed-transition" class="skewed-wrapper">
+    <div class="skewed-bg"></div>
+    <div class="content"></div>
+  </div>
+  <!-- TRANSITION CSS HERE ^-->
+</div>

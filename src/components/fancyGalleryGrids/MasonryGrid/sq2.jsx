@@ -9,7 +9,7 @@ const Sq2 = () => {
         />
 
         <h3 className="font-semibold text-right mr-3 pr-5 pt-1">
-          Software Development
+        Search Engine, Mobile Optimization   
         </h3>
       </div>
     </div>

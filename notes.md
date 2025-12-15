@@ -1,3 +1,10 @@
+- I THINK ARTICLES SHOULD BE DISPLAYED AFTER CONTENT READY. LETS STICK WITH PGS:
+<!-- - HOMEPAGE -->
+- SERVICES
+- FEATURED WORK
+- PRICING
+- CONTACT
+
 _COPY/PASTE MAP FUNCTION--V_
 _---------------_
 const items = [
@@ -130,11 +137,6 @@ free value blog: tech assistance to senior citizens.??
 -
 -
 -
-- I THINK ARTICLES SHOULD BE DISPLAYED AFTER CONTENT READY. LETS STICK WITH PGS:
-- HOMEPAGE
-- SERVICES
-- FEATURED WORK
-- CONTACT
 
 - <!--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-->
    <!--*--*--*--*--*-"CURRENTLY DOING RIBBON" v-*--*--*--*--*--*--*--*--*--*-->

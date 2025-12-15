@@ -9,7 +9,7 @@ const Sq6 = () => {
         alt=""
         className="sq-styles"
       />
-      <h3 className="font-bold pl-1">Copywriting</h3>
+      <h3 className="font-bold pl-1"> Unique and intricate designs, Quick loading performance  </h3>
     </div>
   );
 };

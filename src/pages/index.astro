@@ -1,41 +1,31 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Hero from "../components/sections/Hero.astro";
-import WhatsIncluded from "../components/sections/WhatsIncluded.astro";
-import BuildAuthority from "../components/sections/BuildAuthority.astro";
-import AddressKeyProblem from "../components/sections/AddressKeyProblem.astro";
-import AIDA from "../components/sections/AIDA.astro";
-import HowItWorks from "../components/sections/HowItWorks.astro";
-import SocialProof from "../components/sections/SocialProof.astro";
-import ContactMe from "../components/sections/ContactMe.astro";
+import ContactMe from "../components/homeSections.astro/ContactMe.astro";
+import ServicesCTA from "../components/homeSections.astro/ServicesCTA.astro";
+import WorkCTA from "../components/homeSections.astro/WorkCTA.astro";
+import AboutSection from "../components/homeSections.astro/AboutSection.astro";
+import PricingCTA from "../components/homeSections.astro/PricingCTA.astro";
 ---
 
 <MainLayout>
-  <Hero />
-  <!-- !COME BACK BUILD AUTHORITY -->
-  <BuildAuthority />
-  <!-- !COME BACK TO AFTER FINALIZE LANDING PG CONTENT AND SECTIONS V-->
-  <!-- <SubjectsBanner
-    title="Laughing Coyote Dev offers..."
-    item1="Address Key Problem"
-    item2="social-proof/ AboutSection2"
-    item3="about-pg cta"x
-    item4="web-dev cta"
-  /> -->
-  <!-- !COME BACK TO AFTER FINALIZE LANDING PG CONTENT AND SECTIONS ^-->
-
-  <!-- TODO: ADDRESS KEY PROBLEM -->
-  <AddressKeyProblem />
-  <!-- TODO: AIDA CONTENT v -->
-  <AIDA />
-  <!-- TODO: How it Works(THE PROCESS) V-->
-  <HowItWorks />
-  <!-- TODO: SOCIAL PROOF V-->
-  <SocialProof />
-  <!-- TODO: WHATS INCLUDED CTA V-->
-  <!-- TODO: PRICING/ PKGS CTA V-->
-  <WhatsIncluded />
-  <!-- TODO: new CONTACT cta, IS THIS FOR ME? FAQ v-->
-  <ContactMe />
-  <!-- TODO: new CONTACT cta, IS THIS FOR ME? FAQ ^-->
+  <!-- HOME-ABOUT -->
+  <section id="about-section" class="home-section pt-5">
+    <AboutSection />
+  </section>
+  <!-- SERVICES -->
+  <section id="services-section" class="home-section pt-[55px]">
+    <ServicesCTA />
+  </section>
+  <!-- WORK -->
+  <section id="work-section">
+    <WorkCTA />
+  </section>
+  <!-- PRICING -->
+  <section id="pricing-section" class="home-section bg-teal">
+    <PricingCTA />
+  </section>
+  <!-- CONTACT -->
+  <section id="contact-section" class="">
+    <ContactMe />
+  </section>
 </MainLayout>

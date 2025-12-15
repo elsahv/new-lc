@@ -155,3 +155,24 @@ p {
   padding: 3rem;
   color: white;
 }
+
+
+
+/* *---HOMEPAGE SECTIONS ---v*/
+.home-section {
+  padding-top: 90px;
+}
+
+ /* #services-section-1 {
+
+  {
+  
+ }
+ #services-section-2{
+    
+ } */
+#services-section-3 #about-section1-title{
+    background-color: #15616d;
+    color: lightgreen;
+ }
+/* *---HOMEPAGE SECTIONS ---^*/
