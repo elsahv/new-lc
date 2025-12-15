@@ -1,32 +1,25 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import MasonryGrid from "../components/fancyGalleryGrids/MasonryGrid";
+import Header from "../components/Header.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
-import ContactForm from "../components/ContactForm";
 ---
 
 <MainLayout>
-  <div class="pt-[50px] py-[70px]">
+  <div
+    id="left-panel"
+    class="bg-munsell border border-black h-screen md:absolute relative md:left-0 sm:bottom-0 md:w-2/5 w-full overflow-y-scroll overflow-x-hidden"
+  >
+    <Header />
     <CenterPageBanner
-      BannerTitle="Contact"
+      BannerTitle="contact"
       paragraph="I build custom applications for small businesses."
     />
-    <div class="grid xl:grid-cols-2 pt-[90px] mt-5">
-      <div class="lg:mr-5 mb-5">
-        <img
-          src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg"
-          alt=""
-          class="border-2 border-black rounded-tr-2xl rounded-br-2xl xl:w-full w-3/4"
-        />
-      </div>
-      <ContactForm />
-    </div>
   </div>
-  <!-- ? Writing CTA?? something along the lines of: "Not ready to commit to a site? Feel free to look at free blog resources!" -->
-  <!-- TRANSITION CSS HERE v-->
-  <div class="md:absolute relative"></div>
-  <div id="skewed-transition" class="skewed-wrapper">
-    <div class="skewed-bg"></div>
-    <div class="content"></div>
+
+  <div
+    id="right-panel"
+    class="medium 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden"
+  >
   </div>
-  <!-- TRANSITION CSS HERE ^-->
 </MainLayout>

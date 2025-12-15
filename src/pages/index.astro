@@ -1,31 +1,30 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import ContactMe from "../components/homeSections.astro/ContactMe.astro";
-import ServicesCTA from "../components/homeSections.astro/ServicesCTA.astro";
-import WorkCTA from "../components/homeSections.astro/WorkCTA.astro";
-import AboutSection from "../components/homeSections.astro/AboutSection.astro";
-import PricingCTA from "../components/homeSections.astro/PricingCTA.astro";
+import MasonryGrid from "../components/fancyGalleryGrids/MasonryGrid";
+import Header from "../components/Header.astro";
+import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
+import { Image } from "astro:assets";
+import Coyote from "../images/coyote.png";
 ---
 
 <MainLayout>
-  <!-- HOME-ABOUT -->
-  <section id="about-section" class="home-section pt-5">
-    <AboutSection />
-  </section>
-  <!-- SERVICES -->
-  <section id="services-section" class="home-section pt-[55px]">
-    <ServicesCTA />
-  </section>
-  <!-- WORK -->
-  <section id="work-section">
-    <WorkCTA />
-  </section>
-  <!-- PRICING -->
-  <section id="pricing-section" class="home-section bg-teal">
-    <PricingCTA />
-  </section>
-  <!-- CONTACT -->
-  <section id="contact-section" class="">
-    <ContactMe />
-  </section>
+  <div
+    id="left-panel"
+    class="bg-munsell border border-black h-screen md:absolute relative md:left-0 sm:bottom-0 md:w-2/5 w-full overflow-y-scroll overflow-x-hidden"
+  >
+    <Header />
+    <CenterPageBanner
+      BannerTitle="home"
+      paragraph="I build custom applications for small businesses. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore necessitatibus quisquam labore. Voluptatem, quidem dolor quasi adipisci doloremque perferendis voluptates, totam inventore neque, vitae laboriosam maiores molestias veritatis nesciunt ut!"
+    />
+
+    <Image src={Coyote} alt="" />
+  </div>
+
+  <div
+    id="right-panel"
+    class="medium 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden"
+  >
+    <MasonryGrid />
+  </div>
 </MainLayout>

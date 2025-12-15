@@ -1,18 +1,21 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import MasonryGrid from "../components/fancyGalleryGrids/MasonryGrid";
 import Header from "../components/Header.astro";
 import CenterPageBanner from "../components/shared/CenterPageBanner.astro";
-import DefineItemsGrid from "../components/DefineItemsGrid.astro";
+import SplitSectionImgLeft from "../components/shared/SplitSectionImgLeft.astro";
+import SplitSectionImgRight from "../components/shared/SplitSectionImgRight.astro";
+import AboutPageCTA from "../components/sections/AboutPageCTA.astro";
 ---
 
 <MainLayout>
   <div
     id="left-panel"
-    class="bg-munsell border border-black h-screen md:absolute relative md:left-0 sm:bottom-0 md:w-2/5 w-full overflow-y-scroll overflow-x-hidden"
+    class="bg-munsell order border-black h-screen md:absolute relative md:left-0 sm:bottom-0 md:w-2/5 w-full overflow-y-scroll overflow-x-hidden"
   >
     <Header />
     <CenterPageBanner
-      BannerTitle="work"
+      BannerTitle="about"
       paragraph="I build custom applications for small businesses."
     />
   </div>
@@ -21,6 +24,6 @@ import DefineItemsGrid from "../components/DefineItemsGrid.astro";
     id="right-panel"
     class="medium 2xl:h-screen h-full md:absolute relative right-0 md:w-3/5 w-full md:overflow-y-scroll overflow-x-hidden"
   >
-    <DefineItemsGrid />
+    <AboutPageCTA />
   </div>
 </MainLayout>
